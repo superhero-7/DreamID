@@ -363,14 +363,14 @@
           <p>
             In this paper, we introduce <b>DreamID</b>, a diffusion-based face swapping model that achieves high levels of ID similarity, attribute preservation, 
             image fidelity, and fast inference speed. Unlike the typical face swapping training process, which often relies on implicit supervision and struggles to achieve 
-            satisfactory results. FaceDiffuser establishes explicit supervision for face swapping by constructing Triplet ID Group data, significantly enhancing identity 
+            satisfactory results. <b>DreamID</b> establishes explicit supervision for face swapping by constructing Triplet ID Group data, significantly enhancing identity 
             similarity and attribute preservation. The iterative nature of diffusion models poses challenges for utilizing efficient image-space loss functions, 
             as performing time-consuming multi-step sampling to obtain the generated image during training is impractical. To address this issue,  
             we leverage the accelerated diffusion model SD Turbo, reducing the inference steps to a single iteration, enabling efficient pixel-level end-to-end training with explicit Triplet ID Group supervision. 
             Additionally, we propose an improved diffusion-based model architecture comprising SwapNet, FaceNet, and ID Adapter. This robust architecture fully unlocks the power of the Triplet ID Group explicit supervision. 
             Finally, to further extend our method, we explicitly modify the Triplet ID Group data during training to fine-tune and preserve specific attributes, such as glasses and face shape. 
-            Extensive experiments demonstrate that FaceDiffuser outperforms state-of-the-art methods in terms of identity similarity, pose and expression preservation, and image fidelity. Overall, 
-            FaceDiffuser achieves high-quality face swapping results at 512×512 resolution in just 0.6 seconds and performs exceptionally well in challenging scenarios such as complex lighting, large angles, and occlusions. 
+            Extensive experiments demonstrate that <b>DreamID</b> outperforms state-of-the-art methods in terms of identity similarity, pose and expression preservation, and image fidelity. Overall, 
+            <b>DreamID</b> achieves high-quality face swapping results at 512×512 resolution in just 0.6 seconds and performs exceptionally well in challenging scenarios such as complex lighting, large angles, and occlusions. 
           </p>
          
         </div>
