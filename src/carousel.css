@@ -88,3 +88,57 @@
     transform: translateX(0%);
   }
 }
+
+.image-carousel-container {
+  position: relative;
+  width: 100%; /* 调整容器宽度 */
+  margin: auto;  /* 居中容器 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* 平滑滚动 */
+  width: 100%;
+}
+
+.image-carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* 隐藏滚动条 */
+.image-carousel::-webkit-scrollbar {
+  display: none; /* 对于WebKit浏览器（Chrome, Safari）处理 */
+}
+.image-carousel {
+  -ms-overflow-style: none;  /* 对于IE和Edge处理 */
+  scrollbar-width: none; /* 对于Firefox处理 */
+}
+
+.scroll-button {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-button,
+.right-button {
+  margin: 10px;
+}
+
+/* .left-button {
+  left: 10px;
+}
+
+.right-button {
+  right: 10px;
+} */

@@ -15,6 +15,12 @@
 
   <script src="./src/jquery.min.js"></script>
   <script defer="" src="./src/fontawesome.all.min.js"></script>
+  <script src="./src/index.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" 
+          onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
 
@@ -36,10 +42,10 @@
           <h1 class="title is-1 publication-title"><span style="font-family: bradley hand, cursive;">DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning</span></h1>
           <div class="publication-authors" style="font-size: 22px;">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en&oi=ao">Fulong Ye✉</a></sup>,
+              <a href="https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en&oi=ao">Fulong Ye</a></sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=gvUL1ZoAAAAJ&hl=en">Miao Hua✉</a></sup>,
+              <a href="https://scholar.google.com/citations?user=gvUL1ZoAAAAJ&hl=en">Miao Hua</a></sup>,
             </span>
             <span class="author-block">
               <a href="https://github.com/PangzeCheung">Pengze Zhang</a></sup>,
@@ -126,7 +132,7 @@
           background-color: rgba(255, 255, 255, 0.665);
           margin-top: -15px;
         ">
-      Dream your ID to all corners of existence.
+      We introduce DreamID, a high-similarity, fast, and high-fidelity diffusion-based face-swapping model. You can try out our model in Dreamina.
     </div>
   </div>
 </section>
@@ -385,9 +391,16 @@
     <div class="container is-max-desktop" style="margin-top: 25px">
       <img src="./images/model_00.png" width="100%">
     </div>
-    <div class="content has-text-centered" style="margin-top: 5px">
+    <div class="content has-text-justified" style="margin-top: 5px">
       <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
-        Overview of DreamID.
+        Overview of DreamID. (a)Triplet ID Group Training. We establish explicit supervision for face swapping by constructing Triplet ID Group data. 
+        The construction process utilizes two images with the same ID(A_1 ,A_2) and one image with a different ID_B, along with a FaceSwap Proxy model, 
+        to generate a Pseudo Target ID_B'. Additionally, we initialize our DreamID with SD Turbo, reducing the inference steps to a single step. 
+        This allows for convenient computation of image-space losses, such as ID Loss and reconstruction Loss. 
+        (b) DreamID Model architecture. Our model architecture is composed of three components:
+        1) The base Unet, which we refer to as SwapNet, is responsible for the main process of face swapping. 
+        2) the face Unet feature encoder, named FaceNet, which extracts pixel-level ID information of the user image. 
+        3) the ID Adapter that extracts the semantic-level ID information of the user image. The core feature fusion computation process is illustrated at the bottom.
       </p>
     </div>
 
@@ -404,11 +417,14 @@
     </div>
     <!--/ Comparison. -->
     <div class="container is-max-desktop" style="margin-top: 15px">
-      <img src="./images/style_00.png" width="100%">
+      <img src="./images/teaser.png" width="100%">
     </div>
     <div class="content has-text-justified" style="margin-top: 10px">
       <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
-        xxx
+        DreamID achieves high-fidelity face swapping with unprecedented identity similarity—to our knowledge, 
+        it currently ranks as the most identity-preserving face-swapping model. It addresses long-standing challenges in the field, 
+        such as facial shape deformation, while excelling in attribute preservation (e.g., makeup, lighting) at a fine-grained level. 
+        Moreover, DreamID demonstrates robust performance under occlusions and extreme head poses.
       </p>
     </div>
 
@@ -424,16 +440,64 @@
         <h2 class="title is-4">Applications</h2>
       </div>
     </div>
-    <!--/ Plug and Play. -->
-    <div class="container is-max-desktop" style="margin-top: 15px">
-      <img src="./images/suplementary_00.png" width="100%">
+    <!-- <div class="image-carousel-container">
+      <button class="scroll-button left-button" onclick="scrollLeft_f()">◀</button>
+      <div class="image-carousel" id="image-carousel">
+        <img src="./images/style_1.png" alt="style_1">
+        <img src="./images/style_2.png" alt="style_2">
+        <img src="./images/style_3.png" alt="style_3">
+      </div>
+      <button class="scroll-button right-button" onclick="scrollRight()">▶</button>
+    </div> -->
+    <div class="image-carousel-container">
+      <button class="scroll-button left-button" onclick="scrollLeft_f('image-carousel-1', 857)">◀</button>
+      <div class="image-carousel" id="image-carousel-1">
+        <img src="./images/style_1.png" alt="style_1">
+        <img src="./images/style_2.png" alt="style_2">
+        <img src="./images/style_3.png" alt="style_3">
+      </div>
+      <button class="scroll-button right-button" onclick="scrollRight('image-carousel-1', 857)">▶</button>
     </div>
     <div class="content has-text-justified" style="margin-top: 10px">
       <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
-        xxx
+        DreamID performs well in stylized scenarios, including target images that are sketches or watercolors. 
+        It also handles 3D and cartoon target images effectively. 
+        Moreover, it excels not only with stylized target images but also with stylized user images.
       </p>
     </div>
-
+    <div class="image-carousel-container">
+      <button class="scroll-button left-button" onclick="scrollLeft_f('image-carousel-2', 859)">◀</button>
+      <div class="image-carousel" id="image-carousel-2">
+        <img src="./images/p1.png" alt="p_1">
+        <img src="./images/p2.png" alt="p_2">
+        <img src="./images/p3.png" alt="p_3">
+        <img src="./images/p4.png" alt="p_4">
+        <img src="./images/p5.png" alt="p_5">
+        <img src="./images/p6.png" alt="p_6">
+        <img src="./images/p7.png" alt="p_7">
+      </div>
+      <button class="scroll-button right-button" onclick="scrollRight('image-carousel-2', 859)">▶</button>
+    </div>
+    <div class="content has-text-justified" style="margin-top: 10px">
+      <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
+        DreamID has a wide range of applications across various scenarios, such as film and television scenes, ID portraits, magazine covers.
+      </p>
+    </div>
+    <div class="image-carousel-container">
+      <button class="scroll-button left-button" onclick="scrollLeft_f('image-carousel-3', 859)">◀</button>
+      <div class="image-carousel" id="image-carousel-3">
+        <img src="./images/multi_00.png" alt="multi_1">
+        <img src="./images/multi_01.png" alt="multi_2">
+        <img src="./images/multi_02.png" alt="multi_3">
+        <img src="./images/multi_03.png" alt="multi_4">
+      </div>
+      <button class="scroll-button right-button" onclick="scrollRight('image-carousel-3', 859)">▶</button>
+    </div>
+    <div class="content has-text-justified" style="margin-top: 10px">
+      <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
+        DreamID can also be used in multi-person scenarios, enabling a variety of interesting group photos.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -472,8 +536,8 @@
         <h2 class="title is-4">Acknowledgments</h2>
         <div class="content has-text-justified">
           <p>
-            We sincerely acknowledge the insightful discussions from xxx. 
-            We genuinely appreciate the help from Shiying Chen with xx.
+            We sincerely acknowledge the insightful discussions from Mengtian Li, Cenya Wu, Jizheng Ding and Liuxi Tao. We would like to thank Nanjiang Xie and Kaijun Chen for their contributions to the engineering deployment.
+            We genuinely appreciate the help from Shiying Chen, Qingyang Li, and Wei Han with the evaluation. Additionally, we would like to give thanks to InfiniteYou for providing the website template.
           </p>
         </div>
       </div>
@@ -530,7 +594,7 @@
 </section>
 
 
-<footer class="footer" style="margin-top: -10px">
+<!-- <footer class="footer" style="margin-top: -10px">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -543,6 +607,6 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </body></html>
