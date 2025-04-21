@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img src="assets/logo_svg.png" alt="Logo" style="vertical-align: middle; width: 40px; height: 40px;">
+    <img src="assets/logo_svg.png" alt="Logo" style="vertical-align: middle; width: 55px; height: 55px;">
     DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning
 </h3>
 
