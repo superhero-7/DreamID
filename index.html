@@ -5,6 +5,7 @@
   <meta name="keywords" content="DreamID, Generative Models, Diffusion, FaceSwap">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DreamID | ByteDance Intelligent Creation</title>
+  <link rel="icon" href="./icon/logo.png" type="image/png">
 
   <link href="./src/css" rel="stylesheet">
   <link rel="stylesheet" href="./src/bulma.min.css">
@@ -17,10 +18,8 @@
   <script defer="" src="./src/fontawesome.all.min.js"></script>
   <script src="./src/index.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" 
-          onload="renderMathInElement(document.body);"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -39,7 +38,20 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"><span style="font-family: bradley hand, cursive;">DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning</span></h1>
+          <h1 class="title is-1 publication-title">
+            <img src="./icon/logo.png" alt="Icon" style="vertical-align: middle; height: 100px; margin-right: 10px;"><br>
+            <span style="font-family: bradley hand, cursive;">
+              DreamID: A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning
+            </span>
+          </h1>
+          <!-- <h1 class="title is-1 publication-title">
+            <img id="title-icon" src="./icon/logo.png" alt="Icon">
+            <span style="font-size: 60px; color:#df5a0d; font-weight: bold; font-family: Kaushan Script,regular">
+              <strong>DreamID</strong></span><br>
+              <span style="font-size: 40px; color:#f4f3f1; font-weight: bold; font-family: Chewy,regular; letter-spacing: 1.5px;">
+              <strong>A Fast and High-Fidelity diffusion-based Face Swapping via Triplet ID Group Learning</strong></span>     -->
+          
+          
           <div class="publication-authors" style="font-size: 22px;">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en&oi=ao">Fulong Ye</a></sup>,
@@ -91,11 +103,11 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark"  target="_blank">
+                <a href="https://github.com/superhero-7/DreamID" class="external-link button is-normal is-rounded is-dark"  target="_blank">
                   <span class="icon">
                       <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
                   </span>
-                  <span>Code</span>
+                  <span>Github</span>
                   </a>
               </span>
               <!-- Model Link. -->
@@ -109,11 +121,11 @@
               </span> -->
               <!-- Demo Link. -->
               <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                <a href="https://jimeng.jianying.com/ai-tool/home" class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
-                    <img src="icon/hf.svg" alt="SVG Icon" style="width: 18px; height: 18px;">
+                    <img src="icon/dreamina.png" alt="SVG Icon" style="width: 18px; height: 18px;">
                   </span>
-                  <span>Dreamina</span>
+                  <span>Try our model</span>
                   </a>
               </span>
           </div>
@@ -132,7 +144,7 @@
           background-color: rgba(255, 255, 255, 0.665);
           margin-top: -15px;
         ">
-      We introduce DreamID, a high-similarity, fast, and high-fidelity diffusion-based face-swapping model. You can try out our model in Dreamina.
+      We introduce DreamID, a high-similarity, fast, and high-fidelity diffusion-based face-swapping model. You can try out our model in <a href="https://jimeng.jianying.com/ai-tool/image/generate" target="_blank">Dreamina</a>.
     </div>
   </div>
 </section>
@@ -369,14 +381,14 @@
           <p>
             In this paper, we introduce <b>DreamID</b>, a diffusion-based face swapping model that achieves high levels of ID similarity, attribute preservation, 
             image fidelity, and fast inference speed. Unlike the typical face swapping training process, which often relies on implicit supervision and struggles to achieve 
-            satisfactory results. <b>DreamID</b> establishes explicit supervision for face swapping by constructing Triplet ID Group data, significantly enhancing identity 
+            satisfactory results. FaceDiffuser establishes explicit supervision for face swapping by constructing Triplet ID Group data, significantly enhancing identity 
             similarity and attribute preservation. The iterative nature of diffusion models poses challenges for utilizing efficient image-space loss functions, 
             as performing time-consuming multi-step sampling to obtain the generated image during training is impractical. To address this issue,  
             we leverage the accelerated diffusion model SD Turbo, reducing the inference steps to a single iteration, enabling efficient pixel-level end-to-end training with explicit Triplet ID Group supervision. 
             Additionally, we propose an improved diffusion-based model architecture comprising SwapNet, FaceNet, and ID Adapter. This robust architecture fully unlocks the power of the Triplet ID Group explicit supervision. 
             Finally, to further extend our method, we explicitly modify the Triplet ID Group data during training to fine-tune and preserve specific attributes, such as glasses and face shape. 
-            Extensive experiments demonstrate that <b>DreamID</b> outperforms state-of-the-art methods in terms of identity similarity, pose and expression preservation, and image fidelity. Overall, 
-            <b>DreamID</b> achieves high-quality face swapping results at 512×512 resolution in just 0.6 seconds and performs exceptionally well in challenging scenarios such as complex lighting, large angles, and occlusions. 
+            Extensive experiments demonstrate that FaceDiffuser outperforms state-of-the-art methods in terms of identity similarity, pose and expression preservation, and image fidelity. Overall, 
+            FaceDiffuser achieves high-quality face swapping results at 512×512 resolution in just 0.6 seconds and performs exceptionally well in challenging scenarios such as complex lighting, large angles, and occlusions. 
           </p>
          
         </div>
@@ -394,8 +406,8 @@
     <div class="content has-text-justified" style="margin-top: 5px">
       <p style="font-size:16px; font:caption; font-family:Georgia, 'Times New Roman', Times, serif;">
         Overview of DreamID. (a)Triplet ID Group Training. We establish explicit supervision for face swapping by constructing Triplet ID Group data. 
-        The construction process utilizes two images with the same ID(A_1 ,A_2) and one image with a different ID_B, along with a FaceSwap Proxy model, 
-        to generate a Pseudo Target ID_B'. Additionally, we initialize our DreamID with SD Turbo, reducing the inference steps to a single step. 
+        The construction process utilizes two images with the same ID(A<sub>1</sub> , A<sub>2</sub>) and one image with a different ID<sub>B</sub>, along with a FaceSwap Proxy model, 
+        to generate a Pseudo Target ID<sub>\( \tilde{B} \)</sub>. Additionally, we initialize our DreamID with SD Turbo, reducing the inference steps to a single step. 
         This allows for convenient computation of image-space losses, such as ID Loss and reconstruction Loss. 
         (b) DreamID Model architecture. Our model architecture is composed of three components:
         1) The base Unet, which we refer to as SwapNet, is responsible for the main process of face swapping. 
@@ -537,7 +549,7 @@
         <div class="content has-text-justified">
           <p>
             We sincerely acknowledge the insightful discussions from Mengtian Li, Cenya Wu, Jizheng Ding and Liuxi Tao. We would like to thank Nanjiang Xie and Kaijun Chen for their contributions to the engineering deployment.
-            We genuinely appreciate the help from Shiying Chen, Qingyang Li, and Wei Han with the evaluation. Additionally, we would like to give thanks to InfiniteYou for providing the website template.
+            We genuinely appreciate the help from Siying Chen, Qingyang Li, and Wei Han with the evaluation. Additionally, we would like to give thanks to InfiniteYou for providing the website template.
           </p>
         </div>
       </div>
