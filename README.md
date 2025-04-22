@@ -68,5 +68,13 @@ If DreamID is helpful, please help to ⭐ the repo.
 
 If you find this project useful for your research, please consider citing our paper:
 ```bibtex
-
+@misc{ye2025dreamidhighfidelityfastdiffusionbased,
+      title={DreamID: High-Fidelity and Fast diffusion-based Face Swapping via Triplet ID Group Learning}, 
+      author={Fulong Ye and Miao Hua and Pengze Zhang and Xinghui Li and Qichao Sun and Songtao Zhao and Qian He and Xinglong Wu},
+      year={2025},
+      eprint={2504.14509},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.14509}, 
+}
 ```
