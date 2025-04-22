@@ -55,6 +55,38 @@ UNO excels in subject-driven generation but has room for improvement in generali
 class="center">
 </p> -->
 
+### 🎨 Enjoy on [Dreamina](https://jimeng.jianying.com/ai-tool/home)
+DreamID is applied in Dreamina, ByteDance. You can also enjoy the more advanced customization algorithm in Dreamina!
+
+#### Step 1: Upload your own image: 
+Select generate in image generator.
+<p align="center">
+<img src="./assets/step1-1.jpeg" width=50% height=50% 
+class="center">
+</p>
+Click to import the reference image.
+<p align="center">
+<img src="./assets/step1-2.jpeg" width=50% height=50% 
+class="center">
+</p>
+Select one of your own images to upload, and click on portrait photography(Human Face).
+<p align="center">
+<img src="./assets/step1-3.jpeg" width=50% height=50% 
+class="center">
+</p>
+
+#### Step 2: Write the prompt and then enjoy your result.
+Use your imagination to write the prompt according to your needs, and choose the appropriate model and image ratio parameters.
+<p align="center">
+<img src="./assets/step2-1.jpeg" width=50% height=50% 
+class="center">
+</p>
+Finally, enjoy your result!
+<p align="center">
+<img src="./assets/step2-2.jpeg" width=100% height=50% 
+class="center">
+</p>
+
 ## 📄 Disclaimer
 <p>
 This research aims to advance the field of generative AI. Users are free to 
