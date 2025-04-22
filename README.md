@@ -6,7 +6,7 @@
 <p align="center"> 
 <!-- <a href="https://github.com/bytedance/UNO"><img alt="Build" src="https://img.shields.io/github/stars/bytedance/UNO"></a>  -->
 <a href="https://superhero-7.github.io/DreamID/"><img alt="Build" src="https://img.shields.io/badge/Project%20Page-DreamID-yellow"></a> 
-<a href=""><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-DreamID-b31b1b.svg"></a>
+<a href="https://arxiv.org/abs/2504.14509"><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-DreamID-b31b1b.svg"></a>
 <a href="https://jimeng.jianying.com/ai-tool/image/generate"><img alt="Build" src="https://img.shields.io/badge/Try Online-Dreamina-orange"></a> 
 <!-- <a href="https://huggingface.co/bytedance-research/UNO"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model&color=orange"></a> -->
 <!-- <a href="https://huggingface.co/spaces/bytedance-research/UNO-FLUX"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=demo&color=orange"></a> -->
