@@ -78,7 +78,7 @@ class="center">
 #### Step 2: Write the prompt and then enjoy your result.
 Use your imagination to write the prompt according to your needs, and choose the appropriate model and image ratio parameters.
 <p align="center">
-<img src="./assets/step2-1.jpeg" width=50% height=50% 
+<img src="./assets/step2-1.jpeg" width=100% height=50% 
 class="center">
 </p>
 Finally, enjoy your result!
