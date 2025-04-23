@@ -31,6 +31,7 @@
 
 ## 🔥 News
 - [04/21/2025] 🔥 Our project [DreamID](https://superhero-7.github.io/DreamID/) is released.
+- [04/23/2025] 🔥 Our paper [DreamID](https://arxiv.org/abs/2504.14509) is released.
 
 
 ## 📖 Introduction
