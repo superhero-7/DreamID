@@ -96,6 +96,9 @@ responsible usage. The developers are not liable for any misuse of the tool by u
 
 <!-- ## 🚀 Updates -->
 
+## Hire
+We are recruiting individuals interested in face swap technology, whether for full-time or internships. Feel free to contact us! Email:yefulong@bytedance.com
+
 ##  Citation
 If DreamID is helpful, please help to ⭐ the repo.
 
