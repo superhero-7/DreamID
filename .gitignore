@@ -26,3 +26,5 @@ results
 wandb
 tmp*
 env*
+images_old
+convert_png_to_jpg.py

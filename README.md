@@ -38,7 +38,7 @@
 We introduce DreamID, a high-similarity, fast, and high-fidelity diffusion-based face-swapping model. You can try out our model in <a href="https://jimeng.jianying.com/ai-tool/image/generate" target="_blank">Dreamina</a>.<br>
 
 <p align="center">
-<img src="./assets/teaser.png" width=95% height=95% 
+<img src="./assets/teaser.jpg" width=95% height=95% 
 class="center">
 </p>
 
@@ -62,29 +62,29 @@ DreamID is applied in Dreamina, ByteDance. You can also enjoy the more advanced 
 #### Step 1: Upload your own image: 
 Select generate in image generator.
 <p align="center">
-<img src="./assets/step1-1.jpeg" width=50% height=50% 
+<img src="./assets/step1-1.jpg" width=50% height=50% 
 class="center">
 </p>
 Click to import the reference image.
 <p align="center">
-<img src="./assets/step1-2.jpeg" width=50% height=50% 
+<img src="./assets/step1-2.jpg" width=50% height=50% 
 class="center">
 </p>
 Select one of your own images to upload, and click on portrait photography(Human Face).
 <p align="center">
-<img src="./assets/step1-3.jpeg" width=50% height=50% 
+<img src="./assets/step1-3.jpg" width=50% height=50% 
 class="center">
 </p>
 
 #### Step 2: Write the prompt and then enjoy your result.
 Use your imagination to write the prompt according to your needs, and choose the appropriate model and image ratio parameters.
 <p align="center">
-<img src="./assets/step2-1.jpeg" width=100% height=50% 
+<img src="./assets/step2-1.jpg" width=100% height=50% 
 class="center">
 </p>
 Finally, enjoy your result!
 <p align="center">
-<img src="./assets/step2-2.jpeg" width=100% height=50% 
+<img src="./assets/step2-2.jpg" width=100% height=50% 
 class="center">
 </p>
 
