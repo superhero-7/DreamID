@@ -30,8 +30,8 @@
 
 
 ## 🔥 News
-- [2026.01.06] 🎉 Our video version [DreamID-V](https://github.com/bytedance/DreamID-V) is released! 
-- [2025.08.11] 🎉 DreamID accepted by SIGGRAPH Asia 2025!
+- [01/06/2026] 🎉 Our video version [DreamID-V](https://github.com/bytedance/DreamID-V) is released! 
+- [08/11/2025] 🎉 DreamID accepted by SIGGRAPH Asia 2025!
 - [04/21/2025] 🔥 Our project [DreamID](https://superhero-7.github.io/DreamID/) is released.
 - [04/23/2025] 🔥 Our paper [DreamID](https://arxiv.org/abs/2504.14509) is released.
 
